@@ -46,3 +46,24 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+*{
+	box-sizing: border-box; }
+*::after{
+	box-sizing: border-box; }
+*::before{
+	box-sizing: border-box; }
+input{
+	background: none;
+	border: none;
+}
+input:focus{
+	outline: none;
+	text-align: center;
+}
+input::placeholder{
+	text-align: center;
+}
+input:focus::placeholder{
+	text-align: center;
+	content: '';
+}

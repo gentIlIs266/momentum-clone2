@@ -13,4 +13,5 @@ const backgroundImages = [
 const chooseBg = backgroundImages[Math.round(Math.random() * backgroundImages.length)];
 const doc_bg = document.createElement("img");
 doc_bg.src = `images/${chooseBg}` 
+doc_bg.classList.add("bg-set");
 document.body.appendChild(doc_bg);

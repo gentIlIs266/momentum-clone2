@@ -10,6 +10,7 @@ function logInSubmitObserver (event) {
     showGreetingMessage(typedUsername);
     document.querySelector("#todo__form").classList.remove("is-hidden");
     document.querySelector("#todo__list").classList.remove("is-hidden");
+    document.querySelector(".quote-container").classList.remove("is-hidden");
 }
 function showGreetingMessage (typedUsername) {
     greetingMessage.textContent = `Hello, ${typedUsername}`
@@ -22,5 +23,6 @@ if (savedUsername === null) {
     greetingMessage.classList.remove("is-hidden");
     document.querySelector("#todo__form").classList.remove("is-hidden");
     document.querySelector("#todo__list").classList.remove("is-hidden");
+    document.querySelector(".quote-container").classList.remove("is-hidden");
     showGreetingMessage(savedUsername);
 }

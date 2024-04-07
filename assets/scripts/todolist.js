@@ -17,8 +17,10 @@ function paintToDo (newToDo) {
     li.id = newToDo.id;
     span.textContent = newToDo.text;
     button.textContent = "X";
-    li.appendChild(button);
+    span.classList.add("todo__list-set");
+    button.classList.add("todo__button-set");
     li.appendChild(span);
+    li.appendChild(button);
     doc_toDoList.appendChild(li);
     button.addEventListener("click", deleteToDo);
 }
